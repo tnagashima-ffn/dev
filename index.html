@@ -1,18 +1,14 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>USERINFO</title>
-    <meta charset="UTF-8">
+    <title>Test</title>
 </head>
-
 <body>
-    <script src="http://dev27.cams.com:8645/camschat.cgi?type=userinfo"></script>
-    <script>
-        document.write('http://dev27.cams.com:8645<br>');
-        document.write('Hello '+self.handle+'<br>');
-        document.write('Email: '+self.email+'<br>');
-        document.write('Password (base64): '+self.pw);
-    </script>
-</body>
 
+<script src="http://dev27.cams.com:8645/camschat.cgi?type=userinfo"></script>
+<script>    
+    document.write('Hello '+self.handle+' ('+self.email+')\nPassword (base64): '+self.pw);  
+</script>
+
+    
+</body>
 </html>
